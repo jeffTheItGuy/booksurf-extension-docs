@@ -12,7 +12,6 @@ A Chrome extension that helps you organize and quickly access your bookmarks wit
 - [Search & Navigation](#search--navigation)
 - [Customization](#customization)
 - [Import & Export](#import--export)
-- [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Troubleshooting](#troubleshooting)
 - [Privacy Policy](PRIVACY_POLICY.md)
 
@@ -20,10 +19,9 @@ A Chrome extension that helps you organize and quickly access your bookmarks wit
 
 ## Getting Started
 
-1. Use the **Booksurf Manager** to organize your bookmarks
-2. Customize the appearance in **Settings**
-3. Switch between Grid and List views
-4. Use the search bar to quickly find bookmarks
+1. Customize the appearance in **Settings**
+2. Switch between Grid and List views
+3. Use the search bar to quickly find bookmarks
 
 ---
 
@@ -33,18 +31,10 @@ A Chrome extension that helps you organize and quickly access your bookmarks wit
 |------|-------------|
 | **New Tab** | Full-page speed-dial for bookmarks |
 | **Popup** | Compact window of the Booksurf Manager |
-| **Side Panel** | Sidebar view of the Booksurf Manager |
-| **Full Page** | Full page view of the Booksurf Manager |
 
 ---
 
 ## Bookmark Management
-
-### Booksurf Manager
-- Flattens all bookmark folders and places them in the **Other Bookmarks** folder
-- You cannot change, delete, rename, or reorder the **Bookmarks** and **Other Bookmarks** folders
-- Normal drag/drop and mouse operations are supported
-- For power operations, use the **toolbar**
 
 ### Speed-Dial
 - Accommodates lightweight operations like rename and delete
@@ -59,10 +49,6 @@ A Chrome extension that helps you organize and quickly access your bookmarks wit
 ### Bookmark Search
 - Search across all bookmarks — titles, URLs, and folder names
 - Results filter in real-time as you type
-
-### Web Search
-- Navigate to **Display** in **Settings** to choose your preferred search engine (Google, Bing, DuckDuckGo, etc.)
-- In the same dropdown, set whether searches open in the same tab or a new tab
 
 ---
 
@@ -81,6 +67,15 @@ A Chrome extension that helps you organize and quickly access your bookmarks wit
 - If an image upload fails, try resizing the image or changing its format
 - Switching from **image** to **texture** will delete the image from Chrome memory
 
+### Display Preferences
+- Toggle **Open in New Tab** for bookmark clicks
+- Switch between **Grid** and **List** views
+
+### Animations
+- Choose entry effects: **Fade, Slide, Scale, Bounce**, etc.
+- Adjust **duration** and **stagger** delay
+- Set **hover effects** for interactive cards
+
 ### Bookmark Cards
 - Customize bookmark cards and preview changes before saving
 - Favicon size determines the quality and size of favicons fetched from the internet
@@ -95,6 +90,12 @@ A Chrome extension that helps you organize and quickly access your bookmarks wit
 
 ## Import & Export
 
+### Folders
+- Import or export specific bookmark folders as **JSON** files
+- Access via the **folder icon** in New Tab or Popup views
+- You can download and import bookmark folders from the **Booksurf platform**
+- Exported folders can be shared on the **Booksurf platform** by adding a tag and description
+
 ### Bookmarks
 - Navigate to **Bookmark Manager → Toolbar** to import or export
 - Supported formats: **CSV**, **JSON**, **HTML**
@@ -106,24 +107,17 @@ A Chrome extension that helps you organize and quickly access your bookmarks wit
 
 ---
 
-## Keyboard Shortcuts
-
-### Booksurf Manager
-
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl + Left Click` | Opens the selected bookmark in the background in a new tab |
-| `Shift + Left Click` | Selects the bookmark/folder and enters multi-select mode |
-
----
-
 ## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
-| **Side panel not opening** | Chrome security restriction — open a new tab, then reopen the side panel |
 | **Background image not uploading** | Chrome cache may be full — clear the cache and try a smaller image |
 | **Importing bookmarks failed** | The import file may be corrupt — try importing using your browser's built-in bookmark manager |
+
+### Performance & Cache
+- Navigate to **Settings → Cache Management**
+- Clear cache to free up storage space
+- Recommended if favicons load slowly or storage is full
 
 ---
 
