@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="-0.5 0 48 48"
+   version="1.1"
+   id="svg15"
+   sodipodi:docname="google-color-svgrepo-com.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview17"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="1.3876971"
+     inkscape:cx="566.76635"
+     inkscape:cy="413.99526"
+     inkscape:window-width="1452"
+     inkscape:window-height="991"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg15">
+    <sodipodi:guide
+       position="16.203822,28.433121"
+       orientation="0,-1"
+       id="guide396"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="17.254644,19.579459"
+       orientation="0,-1"
+       id="guide398"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="39.490844,32.18957"
+       orientation="1,0"
+       id="guide400"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <title
+     id="title2">Google-color</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <defs
+     id="defs6" />
+  <path
+     d="m 46.145454,24 c 0,-1.386667 0.03673,-3.22941 -0.283725,-4.616077 l -20.898172,0.156755 0.0054,8.93513 11.434234,-0.06359 c -0.630228,3.0912 -2.430766,5.855516 -4.885448,7.402183 l 7.507182,5.803733 C 43.339341,37.613867 46.145454,31.649067 46.145454,24"
+     id="Fill-4"
+     fill="#4285f4"
+     sodipodi:nodetypes="cccccccc"
+     style="fill-rule:evenodd;stroke:none;stroke-width:1"
+     inkscape:label="blue" />
+  <path
+     d="m 23.713636,37.866667 c -6.164477,0 -11.359045,-3.978667 -13.181363,-9.5104 l -7.9088184,6.0384 c 3.8219545,7.761066 11.8034094,13.072 21.0901814,13.072 5.731864,0 11.204159,-2.0352 15.311318,-5.848534 L 31.517773,35.8144 c -2.118205,1.3344 -4.785455,2.052267 -7.804137,2.052267"
+     id="Fill-3"
+     fill="#34a853"
+     style="fill-rule:evenodd;stroke:none;stroke-width:1"
+     inkscape:label="Green" />
+  <path
+     d="m 9.8272727,24 c 0,-1.524267 0.2531593,-2.9856 0.7050003,-4.356267 L 2.6234546,13.604267 C 1.0820682,16.733867 0.21363636,20.260267 0.21363636,24 c 0,3.736533 0.86736364,7.2608 2.40661364,10.388267 l 7.904546,-6.0512 C 10.077227,26.9728 9.8272727,25.5168 9.8272727,24"
+     id="Fill-1"
+     fill="#fbbc05"
+     style="fill-rule:evenodd;stroke:none;stroke-width:1"
+     inkscape:label="Orange" />
+  <path
+     d="m 23.713636,10.133333 c 3.311364,0 5.669789,0.780181 8.019789,2.700181 L 39.11127,6.8557325 C 34.945361,3.2290658 29.695454,0.53333333 23.713636,0.53333333 c -9.286772,0 -17.2682269,5.31093337 -21.0901814,13.07093367 l 7.9088184,6.039466 c 1.822318,-5.531733 7.016886,-9.5104 13.181363,-9.5104"
+     id="Fill-2"
+     fill="#eb4335"
+     sodipodi:nodetypes="cccsccc"
+     style="fill-rule:evenodd;stroke:none;stroke-width:1"
+     inkscape:label="Red" />
+</svg>

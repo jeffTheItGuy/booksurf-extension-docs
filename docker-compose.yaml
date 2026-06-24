@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  github-pages-booksurf-extension:
+    build: .
+    container_name: gh-pages-booksurf-extension
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      # 👇 MUST point to the DIRECTORY, not the file
+      - bash-history:/home/devuser/.history   
+    stdin_open: true
+    tty: true
+
+volumes:
+  bash-history:

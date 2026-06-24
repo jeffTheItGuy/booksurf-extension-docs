@@ -1,0 +1,28 @@
+@media (max-width: 1024px) {
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-content { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed; top: 70px; left: 0; right: 0;
+    background: var(--bg-card); flex-direction: column; padding: 24px; gap: 16px;
+    border-bottom: 1px solid var(--border-color);
+    transform: translateY(-150%); transition: transform 0.3s ease; z-index: 99;
+  }
+  .nav-links.active { transform: translateY(0); }
+  .mobile-toggle { display: flex; }
+  .hero h1 { font-size: 2.5rem; }
+  .section-header h2, .cta-card h2, .docs-hero h1 { font-size: 2rem; }
+  .features-grid, .faq-grid, .steps-grid { grid-template-columns: 1fr; }
+  .footer-content { grid-template-columns: 1fr; gap: 32px; }
+  .docs-scroll-btn, .home-scroll-left, .home-scroll-right { width: 30px; height: 30px; min-width: 30px; font-size: 12px; }
+  .docs-scroll-left, .home-scroll-left { margin-right: 8px; }
+  .docs-scroll-right, .home-scroll-right { margin-left: 8px; }
+  .docs-tabs, .home-tabs { gap: 4px; }
+  .home-tab, .docs-tab { padding: 6px 12px; font-size: 0.85rem; }
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 2rem; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .btn-lg { width: 100%; }
+}

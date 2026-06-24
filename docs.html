@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentation — Booksurf</title>
+  <meta name="description" content="Complete guide to mastering Booksurf Chrome extension." />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="docs-page">
+  <div id="partial-docs-navbar"></div>
+  <div id="partial-docs-tabs"></div>
+  <div id="partial-docs-content"></div>
+  <div id="partial-docs-footer"></div>
+  <script>
+    const partials = ['docs-navbar', 'docs-tabs', 'docs-content', 'docs-footer'];
+    Promise.all(partials.map(name =>
+      fetch(`partials/${name}.html`).then(r => r.text())
+    )).then(htmls => {
+      htmls.forEach((html, i) => {
+        document.getElementById(`partial-${partials[i]}`).outerHTML = html;
+      });
+
+      // Load JS module after DOM is fully populated
+      const script = document.createElement('script');
+      script.type = 'module';
+      script.src = 'js/main.js';
+      script.onload = () => {
+        if (typeof window.initTabIndicators === 'function') {
+          window.initTabIndicators();
+        }
+
+        // Scroll to hash now that partials exist and JS is ready
+        if (window.location.hash) {
+          const hash = window.location.hash;
+          const NAVBAR_OFFSET = 140;
+          const target = document.querySelector(hash);
+          if (target) {
+            setTimeout(() => {
+              const y = target.getBoundingClientRect().top + window.pageYOffset - NAVBAR_OFFSET;
+              window.scrollTo({ top: y, behavior: 'smooth' });
+
+              document.querySelectorAll('.docs-tab').forEach(tab => {
+                const isActive = tab.getAttribute('href') === hash;
+                tab.classList.toggle('active', isActive);
+                if (isActive) tab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+              });
+
+              if (typeof window.initTabIndicators === 'function') {
+                setTimeout(() => window.initTabIndicators(), 50);
+              }
+            }, 100);
+          }
+        }
+      };
+      document.body.appendChild(script);
+    }).catch(err => console.error('Error loading docs partials:', err));
+  </script>
+</body>
+</html>

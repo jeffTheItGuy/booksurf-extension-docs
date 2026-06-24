@@ -1,0 +1,41 @@
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.8); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+}
+[data-theme="dark"] .navbar { background: rgba(15,23,42,0.8); }
+.nav-container { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.25rem; }
+.logo-img, .footer-logo-img { width: 120px; height: 100px; }
+.footer-logo-img { width: 28px; height: 28px; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-weight: 500; color: var(--text-secondary); transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.nav-active { color: var(--color-primary); font-weight: 600; }
+.nav-actions { display: flex; align-items: center; gap: 16px; }
+
+/* UPDATED THEME TOGGLE STYLES */
+.theme-toggle {
+  background: none; border: none; cursor: pointer; font-size: 1.2rem;
+  padding: 8px; border-radius: 50%; transition: background 0.2s;
+  color: var(--text-primary); /* Ensures SVG inherits the correct theme color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+.theme-toggle:hover { background: var(--bg-alt); }
+
+.mobile-toggle {
+  display: none; background: none; border: none; cursor: pointer;
+  flex-direction: column; gap: 4px; padding: 8px;
+}
+.mobile-toggle span {
+  display: block; width: 24px; height: 2px;
+  background: var(--text-primary); transition: var(--transition);
+}

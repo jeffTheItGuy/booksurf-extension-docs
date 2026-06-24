@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booksurf — Beautiful Bookmark Management</title>
+  <meta name="description" content="A Chrome extension that helps you organize and quickly access your bookmarks with a beautiful, customizable interface." />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="partial-navbar"></div>
+  <div id="partial-home-tabs"></div>
+  <main id="app">
+    <div id="partial-hero"></div>
+    <div id="partial-features"></div>
+    <div id="partial-faq"></div>
+    <div id="partial-cta"></div>
+  </main>
+  <div id="partial-footer"></div>
+
+  <script>
+    // Fetch and inject HTML partials, THEN load JS
+    const partials = ['navbar', 'home-tabs', 'hero', 'features', 'faq', 'cta', 'footer'];
+
+    Promise.all(partials.map(name =>
+      fetch(`partials/${name}.html`).then(r => r.text())
+    )).then(htmls => {
+      htmls.forEach((html, i) => {
+        document.getElementById(`partial-${partials[i]}`).outerHTML = html;
+      });
+
+      // Now load the JS module after DOM is fully populated
+      const script = document.createElement('script');
+      script.type = 'module';
+      script.src = 'js/main.js';
+      script.onload = () => {
+        // Re-init tab indicators now that tabs exist in the DOM
+        if (typeof window.initTabIndicators === 'function') {
+          window.initTabIndicators();
+        }
+      };
+      document.body.appendChild(script);
+    }).catch(err => console.error('Error loading home partials:', err));
+  </script>
+</body>
+</html>

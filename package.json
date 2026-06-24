@@ -1,0 +1,10 @@
+{
+  "name": "booksurf-extension-docs",
+  "version": "1.0.0",
+  "description": "GitHub Pages site for Booksurf Extension",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}
