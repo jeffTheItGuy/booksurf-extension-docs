@@ -6,3 +6,4 @@
 .footer-links a { color: var(--text-secondary); transition: color 0.2s; }
 .footer-links a:hover { color: var(--color-primary); }
 .footer-bottom { text-align: center; padding-top: 24px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.9rem; }
+.footer-logo-img{}

@@ -1,3 +1,6 @@
+/* ============================================
+   FAQ SECTION
+============================================ */
 .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 800px; margin: 0 auto; }
 .faq-grid-centered { grid-template-columns: 1fr; max-width: 600px; }
 .faq-item { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; }
@@ -11,15 +14,95 @@
 .faq-item p { padding: 0 20px 20px; color: var(--text-secondary); }
 .faq-cta { text-align: center; margin-top: 40px; }
 .faq-cta p { margin-bottom: 16px; color: var(--text-secondary); }
-.cta-section { padding: 80px 0; }
-.cta-card {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  border-radius: var(--radius-lg); padding: 60px 40px; text-align: center; color: #fff;
+
+/* ============================================
+   CTA SECTION (UPDATED)
+============================================ */
+.cta-section { 
+  padding: 60px 0; /* Reduced for a more compact feel */
 }
-.cta-card h2 { font-size: 2.5rem; margin-bottom: 16px; }
-.cta-card p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 32px; }
-.cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-.cta-card .btn-primary { background: #fff; color: var(--color-primary); }
-.cta-card .btn-primary:hover { background: #f1f5f9; }
-.cta-card .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,0.3); }
-.cta-card .btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+
+.cta-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg); 
+  padding: 48px 32px; /* Reduced padding */
+  text-align: center; 
+  color: var(--text-primary);
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Animated SVG Background */
+.cta-icon-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  stroke: var(--color-primary);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.cta-icon-bg .anim-pulse {
+  fill: var(--color-primary);
+  stroke: none;
+}
+
+[data-theme="dark"] .cta-icon-bg {
+  opacity: 0.1;
+}
+
+/* Content Overlay */
+.cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-card h2 { 
+  font-size: 2rem; /* Reduced from 2.5rem */
+  margin-bottom: 12px; 
+  color: var(--text-primary);
+}
+
+.cta-card p { 
+  font-size: 1.05rem; 
+  color: var(--text-secondary);
+  margin-bottom: 24px; 
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-actions { 
+  display: flex; 
+  gap: 12px; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
+
+/* Button Colors (Standard theme colors) */
+.cta-card .btn-primary { 
+  background: var(--color-primary); 
+  color: #fff; 
+}
+.cta-card .btn-primary:hover { 
+  background: var(--color-primary-hover); 
+}
+
+.cta-card .btn-secondary { 
+  background: transparent; 
+  color: var(--text-primary); 
+  border-color: var(--border-color); 
+}
+.cta-card .btn-secondary:hover { 
+  border-color: var(--color-primary); 
+  color: var(--color-primary);
+}

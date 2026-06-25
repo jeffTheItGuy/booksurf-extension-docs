@@ -7,7 +7,7 @@
 .nav-container { display: flex; align-items: center; justify-content: space-between; height: 70px; }
 .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.25rem; }
 .logo-img, .footer-logo-img { width: 120px; height: 100px; }
-.footer-logo-img { width: 28px; height: 28px; }
+.footer-logo-img { width: 120px; height: 100px; }
 .nav-links { display: flex; gap: 32px; }
 .nav-links a { font-weight: 500; color: var(--text-secondary); transition: color 0.2s; }
 .nav-links a:hover, .nav-links a.nav-active { color: var(--color-primary); font-weight: 600; }
